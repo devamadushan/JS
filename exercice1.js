@@ -1,19 +1,9 @@
-let uneTemperature = prompt("saisir une température")
+let valeur = prompt("Saisir une valeur");
+valeur = parseInt(valeur)
 
-uneTemperature = parseInt(uneTemperature)
 
-let msg;
 
-if (uneTemperature <0){
-    msg = "L'eau est solide"
+if (valeur < 0){
+    valeur = valeur * -1
 }
-
-else if (uneTemperature<100){
-    msg = "L'eau est liquide"
-}
-
-else {
-    msg = "L'eau est sous forme gazeuse"
-}
-
-document.write(msg)
+document.write(valeur)
